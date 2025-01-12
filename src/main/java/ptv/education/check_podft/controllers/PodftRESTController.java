@@ -43,9 +43,9 @@ public class PodftRESTController {
             for (FieldError error: errors){
                 errorMessage.append(error.getField()).append(" - ").append(error.getDefaultMessage()).append(";");
             }
-            throw new checkPODFTPersonExeption(errorMessage.toString());   //TODO генерируем исключение правильное
+            throw new checkPODFTPersonExeption(errorMessage.toString());   // генерируем исключение правильное
         }
-        //TODO ищем по ИНН,SNILS,ФИО+ДР.
+        // ищем по ИНН,SNILS,ФИО+ДР.
         Optional<Subject> subjectInn = subjectsService.findBySubjectInn(checkPodftPersonRequestDTO.getSubjectInn());
         Optional<Subject> subjectSnils = subjectsService.findBySubjectSnils(checkPodftPersonRequestDTO.getSubjectSnils());
         Optional<Subject> subjectFioB = subjectsService.findBySubjectFioAndSubjectBirthday(checkPodftPersonRequestDTO.getSubjectFio(), checkPodftPersonRequestDTO.getSubjectBirthday());

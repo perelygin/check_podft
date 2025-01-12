@@ -31,7 +31,7 @@ import java.util.Optional;
 public class PodftRESTLoadFileController {
 
     @Value("${xmlfilepath}")
-    private String path;  //имя файла для загрузки берем из настроек  //TODO: взять  из каталога xml-файл с максимальной датой
+    private String path;  //имя файла для загрузки берем из настроек
     private final SubjectsService subjectsService;
     private final ListInfoService listInfoService;
     private final DocumentsService documentsService;
