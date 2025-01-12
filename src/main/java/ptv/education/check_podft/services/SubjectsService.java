@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ptv.education.check_podft.model.Subject;
 import ptv.education.check_podft.repositories.SubjectsRepository;
-import ptv.education.check_podft.util.SubjectNotFoundExeption;
+//import ptv.education.check_podft.util.SubjectNotFoundExeption;
 
 import java.time.LocalDate;
 import java.util.List;

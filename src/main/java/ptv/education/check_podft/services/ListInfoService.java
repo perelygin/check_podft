@@ -1,13 +1,13 @@
 package ptv.education.check_podft.services;
 
-import org.springframework.data.domain.Limit;
+//import org.springframework.data.domain.Limit;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ptv.education.check_podft.model.ListInfo;
-import ptv.education.check_podft.model.Subject;
+//import ptv.education.check_podft.model.Subject;
 import ptv.education.check_podft.repositories.ListInfoRepository;
 
-import java.util.List;
+//import java.util.List;
 import java.util.Optional;
 
 @Service

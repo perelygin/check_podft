@@ -3,7 +3,7 @@ package ptv.education.check_podft.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ptv.education.check_podft.model.Subject;
+//import ptv.education.check_podft.model.Subject;
 import ptv.education.check_podft.repositories.DocumentsRepository;
 
 @Service
