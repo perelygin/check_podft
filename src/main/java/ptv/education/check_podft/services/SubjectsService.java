@@ -34,8 +34,7 @@ public class SubjectsService {
          Поиск терорриста по ФИО
      */
     public Optional<Subject> findBySubjectFioAndSubjectBirthday(String subjectFio,LocalDate birthday){
-        Optional<Subject> subject = subjectsRepository.findBySubjectFioAndSubjectBirthday(subjectFio.toUpperCase(), birthday);  //Приводим ФИО к верхнему регистру
-        return subject;
+        return subjectsRepository.findBySubjectFioAndSubjectBirthday(subjectFio.toUpperCase(), birthday);
     }
     public Optional<Subject> findBySubjectInn(String inn){
         Optional<Subject> subject = subjectsRepository.findBySubjectInn(inn);
